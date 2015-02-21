@@ -1,5 +1,5 @@
 build/
 .settings/
 .project
-*.class
 .classpath
+.checkstyle

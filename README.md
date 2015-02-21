@@ -11,29 +11,29 @@
 ### Gestures
 Changes color to red:
 
-![alt tag](red-gesture.png)
+![alt tag](img/red-gesture.png)
 
 Changes color to blue:
 
-![alt tag](blue-gesture.png)
+![alt tag](img/blue-gesture.png)
 
 Changes color to green:
 
-![alt tag](green-gesture.png)
+![alt tag](img/green-gesture.png)
 
 Changes color to black:
 
-![alt tag](black-gesture.png)
+![alt tag](img/black-gesture.png)
 
 Changes color to yellow:
 
-![alt tag](yellow-gesture.png)
+![alt tag](img/yellow-gesture.png)
 
 Changes color to orange:
 
-![alt tag](orange-gesture.png)
+![alt tag](img/orange-gesture.png)
 
 Clears the canvas:
 
-![alt tag](clear-gesture.png)
+![alt tag](img/clear-gesture.png)
 

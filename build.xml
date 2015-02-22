@@ -24,7 +24,7 @@
     <jar destfile="${release}/paint-program.jar"> 
     	<fileset dir="${build}"/>
     	<manifest>
-    		<attribute name="Main-Class" value="siger.MainPanel"/>
+    		<attribute name="Main-Class" value="MainPanel"/>
     	</manifest>
     </jar>
   </target>

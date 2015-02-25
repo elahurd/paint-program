@@ -26,7 +26,7 @@ import javax.swing.event.MouseInputAdapter;
  */
 public class PaintPanel extends JPanel implements KeyListener {
     
-    private SelectorPanel selectorPanel;
+    private final SelectorPanel selectorPanel;
     
     private int leftBound;
     private int rightBound;
@@ -36,18 +36,18 @@ public class PaintPanel extends JPanel implements KeyListener {
     private boolean entering;
     private boolean rightReleased;
     
-    private ArrayList<Point2D> pointArray;
+    private final ArrayList<Point2D> pointArray;
     
-    private HashMap<Path2D.Double, Color> pathMap;
+    private final HashMap<Path2D.Double, Color> pathMap;
     private Path2D.Double selectedPath;
     
     private Path2D.Double rightPath;
     
-    private int strokeWidth;
+    private final int strokeWidth;
     
     private Color color;
     
-    private SigerRecognizer siger;
+    private final SigerRecognizer siger;
 
     /**
      * This is the panel that the user will paint in.
@@ -223,7 +223,7 @@ public class PaintPanel extends JPanel implements KeyListener {
      * 
      * @param color The color to set the active color to.
      */
-    public void setColor(Color color) {
+    private void setColor(Color color) {
         this.color = color;
     }
 

@@ -18,7 +18,7 @@ import javax.swing.event.MouseInputAdapter;
  */
 public class ColorSelector extends JComponent {
     
-    private Color color;
+    private final Color color;
     private final int width = 50;
     private final int height = 50;
     

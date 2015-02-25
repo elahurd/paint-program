@@ -17,16 +17,16 @@ public class SigerRecognizer {
         RED, GREEN, BLUE, BLACK, YELLOW, ORANGE, CLEAR, NONE
     } 
 
-    private String[] redArray = {"UPS", "RIGHTS", "DOWNS", "LEFTS", "DOWNS", "RIGHTS"};
-    private String[] greenArray = {"LEFTS", "DOWNS", "RIGHTS", "UPS", "LEFTS"};
-    private String[] blueArray = {"UPS", "RIGHTS", "DOWNS", "LEFTS", "DOWNS", "RIGHTS", "DOWNS", "LEFTS"};
-    private String[] blackArray = {"DOWNS", "RIGHTS"};
-    private String[] yellowArray = {"RIGHTS_AND_DOWNS", "RIGHTS_AND_UPS"};
-    private String[] orangeArray = {"LEFTS", "UPS", "RIGHTS", "DOWNS", "LEFTS"};
-    private String[] clearArray = {"LEFTS", "DOWNS", "RIGHTS"};
+    private final String[] redArray = {"UPS", "RIGHTS", "DOWNS", "LEFTS", "DOWNS", "RIGHTS"};
+    private final String[] greenArray = {"LEFTS", "DOWNS", "RIGHTS", "UPS", "LEFTS"};
+    private final String[] blueArray = {"UPS", "RIGHTS", "DOWNS", "LEFTS", "DOWNS", "RIGHTS", "DOWNS", "LEFTS"};
+    private final String[] blackArray = {"DOWNS", "RIGHTS"};
+    private final String[] yellowArray = {"RIGHTS_AND_DOWNS", "RIGHTS_AND_UPS"};
+    private final String[] orangeArray = {"LEFTS", "UPS", "RIGHTS", "DOWNS", "LEFTS"};
+    private final String[] clearArray = {"LEFTS", "DOWNS", "RIGHTS"};
     
 
-    private Pattern[] patterns = { 
+    private final Pattern[] patterns = { 
         Pattern.compile(buildPatternString(redArray)),
         Pattern.compile(buildPatternString(greenArray)),
         Pattern.compile(buildPatternString(blueArray)), 

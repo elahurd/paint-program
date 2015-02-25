@@ -9,6 +9,11 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 
 
+/**
+ * This is the panel where the user selects the color to use.
+ * 
+ * @author Evan LaHurd
+ */
 public class SelectorPanel extends JPanel {
     
     private Color selectedColor;
@@ -18,7 +23,6 @@ public class SelectorPanel extends JPanel {
      */
     public SelectorPanel() {
       
-        
         setPreferredSize(new Dimension(100, 750));
         GridLayout gridLayout = new GridLayout(6, 1);
         setLayout(gridLayout);
@@ -34,10 +38,20 @@ public class SelectorPanel extends JPanel {
         setSelectedColor(Color.BLACK);
     }
     
+    /**
+     * This is the setter for the selected color.
+     * 
+     * @param color The color to set the active color to
+     */
     public void setSelectedColor(Color color) {
         this.selectedColor = color;
     }
     
+    /**
+     * This is the getter for the color the user has selected.
+     * 
+     * @return the selected color
+     */
     public Color getSelectedColor() {
         return selectedColor;
     }

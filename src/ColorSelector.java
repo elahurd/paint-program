@@ -10,7 +10,12 @@ import javax.swing.JComponent;
 import javax.swing.event.MouseInputAdapter;
 
 
-@SuppressWarnings("serial")
+/**
+ * This class represents the color squares that the user can
+ * click to select the active color.
+ * 
+ * @author Evan LaHurd
+ */
 public class ColorSelector extends JComponent {
     
     private Color color;
@@ -44,7 +49,9 @@ public class ColorSelector extends JComponent {
     }
     
     /**
-     * Color selector paints itself.
+     * This is where the color selector paints itself.
+     * 
+     * @param graphics The graphics object
      */
     public void paintComponent(Graphics graphics) {
         
@@ -61,14 +68,4 @@ public class ColorSelector extends JComponent {
         repaint();
         revalidate();
     }
-    
-    /**
-     * This returns this color of the color selector.
-     * 
-     * @return the color of the color selector
-     */
-    public Color getColor() {
-        return color;
-    }
-
 }

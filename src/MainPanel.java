@@ -7,6 +7,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 
+/**
+ * This is the main panel that contains the paint panel and the 
+ * selector panel.
+ * 
+ * @author Evan LaHurd
+ */
 public class MainPanel extends JPanel {
     
     private PaintPanel paintPanel;

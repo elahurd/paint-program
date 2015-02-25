@@ -5,6 +5,12 @@ import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 
+/**
+ * This is the class that handles gesture recognition using the 
+ * Siger gesture recognizer.
+ * 
+ * @author Evan LaHurd
+ */
 public class SigerRecognizer {
 
     public enum PatternIndex {

@@ -24,7 +24,6 @@ import javax.swing.event.MouseInputAdapter;
  * 
  * @author Evan LaHurd
  */
-@SuppressWarnings("serial")
 public class PaintPanel extends JPanel implements KeyListener {
     
     private SelectorPanel selectorPanel;
@@ -52,6 +51,8 @@ public class PaintPanel extends JPanel implements KeyListener {
 
     /**
      * This is the panel that the user will paint in.
+     * 
+     * @param selectorPanel Reference to the panel where the user can select a color to use
      */
     public PaintPanel(SelectorPanel selectorPanel) {
         
@@ -162,6 +163,8 @@ public class PaintPanel extends JPanel implements KeyListener {
 
     /**
      * This is where the panel paints itself.
+     * 
+     * @param graphics The graphics object
      */
     public void paintComponent(Graphics graphics) {
     
@@ -198,13 +201,15 @@ public class PaintPanel extends JPanel implements KeyListener {
      * @param event The event of the key being pressed
      */
     public void keyTyped(KeyEvent event) {
-        clearCanvas();
+        if (event.getKeyChar() == 'c') {
+            clearCanvas();
+        }
     }
     
     /**
      * This clears the canvas of any drawings.
      */
-    public void clearCanvas() {
+    private void clearCanvas() {
         for (Entry<Path2D.Double, Color> entry : pathMap.entrySet()) {
             entry.getKey().reset();
         }
@@ -213,12 +218,19 @@ public class PaintPanel extends JPanel implements KeyListener {
         revalidate();
     }
     
+    /**
+     * Sets the active color to the specified color.
+     * 
+     * @param color The color to set the active color to.
+     */
     public void setColor(Color color) {
         this.color = color;
     }
 
+    //unimplemented method
     public void keyPressed(KeyEvent event) {}
     
+    //unimplemented method
     public void keyReleased(KeyEvent event) {}
 
     
